@@ -33,6 +33,8 @@ function acceptForm(e) {
   fetch("https://nhope.pl/form.php", {
     body: new FormData(backForm),
     method: "post",
+  }).then(function () {
+    backForm.reset();
   });
 }
 if (JSON.parse(localStorage.getItem("theme"))) {
