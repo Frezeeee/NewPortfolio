@@ -35,6 +35,7 @@ function acceptForm(e) {
     method: "post",
   }).then(function () {
     backForm.reset();
+    alert('Form send!');
   });
 }
 if (JSON.parse(localStorage.getItem("theme"))) {
